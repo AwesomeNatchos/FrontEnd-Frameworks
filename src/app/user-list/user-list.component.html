@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Birthdate</th>
+      <th>Account</th>
+      <th>Company Name</th>
+      <th>Credit Card Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of fakerUsers">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.birthdate }}</td>
+      <td>{{ user.account }}</td>
+      <td>{{ user.companyname }}</td>
+      <td>{{ user.creditcardnum }}</td>
+    </tr>
+  </tbody>
+</table>
+

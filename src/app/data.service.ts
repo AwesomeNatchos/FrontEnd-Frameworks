@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 
@@ -9,5 +10,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  constructor() { }
+  private dataUrl = 'assets/fakerusers.json';
+
+  constructor(private http: HttpClient) { }
+
+  getFakerUsers(): Observable<any> {
+    return this.http.get(this.dataUrl);
+  }
 }

@@ -6,15 +6,20 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserTableComponent } from './user-table/user-table.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { UserListComponent } from './user-list/user-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UserTableComponent
+    UserTableComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
