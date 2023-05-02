@@ -8,18 +8,24 @@ import { UserTableComponent } from './user-table/user-table.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { UserListComponent } from './user-list/user-list.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     UserTableComponent,
-    UserListComponent
+    UserListComponent,
+    UserEditComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
